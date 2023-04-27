@@ -230,7 +230,7 @@ describe('PUT booking', () => {
       expect(response.status).toBe(httpStatus.BAD_REQUEST);
     });
 
-    it('should respond with status 404 if user did not book a room yet', async () => {
+    it('should respond with status 403 if user did not book a room yet', async () => {
       const user = await createUser();
       const token = await generateValidToken(user);
       const enrollment = await createEnrollmentWithAddress(user);
@@ -242,7 +242,7 @@ describe('PUT booking', () => {
 
       const response = await server.put(`/booking/${1}`).set('Authorization', `Bearer ${token}`).send(body);
 
-      expect(response.status).toBe(httpStatus.NOT_FOUND);
+      expect(response.status).toBe(httpStatus.FORBIDDEN);
     });
 
     it('should respond with status 403 if user does not own the bookingId', async () => {
