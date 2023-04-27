@@ -5,7 +5,12 @@ async function getBooking(userId: number) {
     where: {
       userId,
     },
-    include: {
+    select: {
+      id: true,
+      roomId: false,
+      userId: false,
+      createdAt: false,
+      updatedAt: false,
       Room: true,
     },
   });
