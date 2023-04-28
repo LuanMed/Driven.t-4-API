@@ -10,9 +10,7 @@ export async function getBooking(req: AuthenticatedRequest, res: Response) {
     const booking = await bookingService.getBooking(userId);
     return res.status(httpStatus.OK).send(booking);
   } catch (error) {
-    if (error.name === 'NotFoundError') {
-      return res.sendStatus(httpStatus.NOT_FOUND);
-    }
+    return res.sendStatus(httpStatus.NOT_FOUND);
   }
 }
 export async function createBooking(req: AuthenticatedRequest, res: Response) {
@@ -28,12 +26,10 @@ export async function createBooking(req: AuthenticatedRequest, res: Response) {
     if (error.name === 'NotFoundError') {
       return res.sendStatus(httpStatus.NOT_FOUND);
     }
-    if (error.name === 'Forbidden') {
-      return res.sendStatus(httpStatus.FORBIDDEN);
-    }
     if (error.name === 'CannotListHotelsError') {
       return res.sendStatus(httpStatus.FORBIDDEN);
     }
+    return res.sendStatus(httpStatus.FORBIDDEN);
   }
 }
 export async function updateBooking(req: AuthenticatedRequest, res: Response) {
@@ -49,11 +45,9 @@ export async function updateBooking(req: AuthenticatedRequest, res: Response) {
     if (error.name === 'NotFoundError') {
       return res.sendStatus(httpStatus.NOT_FOUND);
     }
-    if (error.name === 'Forbidden') {
-      return res.sendStatus(httpStatus.FORBIDDEN);
-    }
     if (error.name === 'CannotListHotelsError') {
       return res.sendStatus(httpStatus.FORBIDDEN);
     }
+    return res.sendStatus(httpStatus.FORBIDDEN);
   }
 }

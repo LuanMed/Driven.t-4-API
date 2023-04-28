@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1682614446490" clover="3.2.0">
-  <project timestamp="1682614446490" name="All files">
-    <metrics statements="585" coveredstatements="332" conditionals="86" coveredconditionals="24" methods="98" coveredmethods="25" elements="769" coveredelements="381" complexity="0" loc="585" ncloc="585" packages="26" files="64" classes="64"/>
+<coverage generated="1682690529888" clover="3.2.0">
+  <project timestamp="1682690529889" name="All files">
+    <metrics statements="582" coveredstatements="330" conditionals="83" coveredconditionals="21" methods="98" coveredmethods="25" elements="763" coveredelements="376" complexity="0" loc="582" ncloc="582" packages="26" files="64" classes="64"/>
     <package name="src">
       <metrics statements="22" coveredstatements="15" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="1"/>
       <file name="app.ts" path="/home/luan/Documents/Driven/Projetos/projeto23-drivent4/src/app.ts">
@@ -59,7 +59,7 @@
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="152" coveredstatements="67" conditionals="22" coveredconditionals="8" methods="16" coveredmethods="3"/>
+      <metrics statements="149" coveredstatements="65" conditionals="19" coveredconditionals="5" methods="16" coveredmethods="3"/>
       <file name="authentication-controller.ts" path="/home/luan/Documents/Driven/Projetos/projeto23-drivent4/src/controllers/authentication-controller.ts">
         <metrics statements="8" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="1" type="stmt"/>
@@ -72,7 +72,7 @@
         <line num="13" count="0" type="stmt"/>
       </file>
       <file name="booking-controller.ts" path="/home/luan/Documents/Driven/Projetos/projeto23-drivent4/src/controllers/booking-controller.ts">
-        <metrics statements="36" coveredstatements="34" conditionals="9" coveredconditionals="8" methods="3" coveredmethods="3"/>
+        <metrics statements="33" coveredstatements="32" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
         <line num="2" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
@@ -80,35 +80,32 @@
         <line num="9" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="14" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="18" count="6" type="stmt"/>
         <line num="20" count="6" type="stmt"/>
-        <line num="22" count="6" type="stmt"/>
-        <line num="23" count="6" type="cond" truecount="1" falsecount="0"/>
-        <line num="25" count="5" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="28" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="31" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="29" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="30" count="1" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
-        <line num="34" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="35" count="1" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="6" type="stmt"/>
-        <line num="41" count="6" type="stmt"/>
-        <line num="42" count="6" type="stmt"/>
-        <line num="43" count="6" type="stmt"/>
-        <line num="44" count="6" type="cond" truecount="1" falsecount="0"/>
-        <line num="46" count="5" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="49" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="50" count="1" type="stmt"/>
-        <line num="52" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="53" count="3" type="stmt"/>
-        <line num="55" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="56" count="0" type="stmt"/>
+        <line num="36" count="6" type="stmt"/>
+        <line num="37" count="6" type="stmt"/>
+        <line num="38" count="6" type="stmt"/>
+        <line num="39" count="6" type="stmt"/>
+        <line num="40" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="42" count="5" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="45" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="48" count="3" type="cond" truecount="0" falsecount="1"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
       </file>
       <file name="enrollments-controller.ts" path="/home/luan/Documents/Driven/Projetos/projeto23-drivent4/src/controllers/enrollments-controller.ts">
         <metrics statements="20" coveredstatements="5" conditionals="1" coveredconditionals="0" methods="3" coveredmethods="0"/>
